@@ -15,8 +15,30 @@
 
     <h3>PPM Image Denoiser (C++, CMake):</h3>
     <p>A C++ tool that denoises Portable Pixmap (PPM) images by averaging multiple noisy samples to produce a single clean image.</p>
-    <!-- Placeholder for Before/After screenshot -->
-    <img src="https://via.placeholder.com/400x200?text=Before/After+PPM+Denoiser" alt="PPM Denoiser Before/After" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+    <!-- CSS Grid for 9 Noisy Images & 1 Clean Image -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 20px;">
+      <!-- 3x3 Grid of Noisy Images -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; max-width: 300px;">
+        <img src="assets/noisy1.png" alt="Noisy 1" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy2.png" alt="Noisy 2" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy3.png" alt="Noisy 3" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy4.png" alt="Noisy 4" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy5.png" alt="Noisy 5" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy6.png" alt="Noisy 6" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy7.png" alt="Noisy 7" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy8.png" alt="Noisy 8" style="width: 100%; border: 1px solid #ccc;">
+        <img src="assets/noisy9.png" alt="Noisy 9" style="width: 100%; border: 1px solid #ccc;">
+      </div>
+      
+      <!-- Arrow indicating process -->
+      <div style="font-size: 24px; font-weight: bold;">&#8594;</div>
+
+      <!-- Final Clean Image -->
+      <div style="max-width: 400px; text-align: center;">
+        <img src="assets/clean.png" alt="Final Clean Image" style="width: 100%; border: 1px solid #ccc;">
+        <p style="margin-top: 5px; font-weight: bold;">Final Averaged Image</p>
+      </div>
+    </div>
     <br><br>
     <a href="https://github.com/luiscortesjimenez/PPM_Denoiser" style="padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">View Code on GitHub</a>
     <a href="https://github.com/luiscortesjimenez/PPM_Denoiser#readme" style="padding: 8px 12px; background-color: #24292e; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; margin-left: 10px;">Read Documentation</a>
