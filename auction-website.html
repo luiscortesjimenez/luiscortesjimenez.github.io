@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Auction Platform — Luis Cortes Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">Luis Cortes Jimenez</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="auction-website.html" class="active">Auction Website</a>
+        <a href="chordarchitect.html">Chord Architect</a>
+        <a href="ppm-denoiser.html">PPM Denoiser</a>
+        <a href="cacti.html">Cacti / Succulents</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Online Auction Platform</h1>
+      <p><strong>Python, CGI, MySQL, HTML/CSS</strong> &mdash; Group Project</p>
+      <p>A full stack web application where users register, log in, browse live auctions, place bids, and list items for sale. Built as a group project for Introduction to Software Development and deployed on university web hosting.</p>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li><strong>User accounts:</strong> Registration and login with bcrypt-hashed passwords and server-side session management via HttpOnly cookies.</li>
+        <li><strong>Live auctions:</strong> Browse all active listings; authenticated users can place bids with full validation (auction active, bid exceeds current high bid, no self-bidding).</li>
+        <li><strong>Sell items:</strong> List an item with a name, description, starting bid, and scheduled start time; auctions run for a fixed 7-day window.</li>
+        <li><strong>My listings:</strong> View your own active and past auctions.</li>
+        <li><strong>Transaction history:</strong> Dashboard with views for current bids, selling activity, purchases, and expired auctions.</li>
+      </ul>
+
+      <div class="project-screenshots">
+        <div class="screenshot-grid">
+          <div class="screenshot">
+            <img src="assets/auction/landing.png" alt="Landing page">
+            <p>Landing Page</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/auction/register.png" alt="Registration form">
+            <p>Register</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/auction/login.png" alt="Login form">
+            <p>Login</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/auction/login_successful.png" alt="Successful login with auctions">
+            <p>Login Successful</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/auction/list_item.png" alt="List an item for auction">
+            <p>List an Item</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="https://github.com/luiscortesjimenez/auction_website" class="btn">View Code on GitHub</a>
+      </div>
+    </main>
+  </body>
+</html>

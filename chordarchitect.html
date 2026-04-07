@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Architect — Luis Cortes Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">Luis Cortes Jimenez</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="auction-website.html">Auction Website</a>
+        <a href="chordarchitect.html" class="active">Chord Architect</a>
+        <a href="ppm-denoiser.html">PPM Denoiser</a>
+        <a href="cacti.html">Cacti / Succulents</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Chord Architect</h1>
+      <p><strong>C++, CMake</strong></p>
+      <p>A C++ guitar chord generator that models a fretboard, computes voicings for any chord symbol (like Am, G7, Cmaj7) and stores them in a custom hash table for fast lookup. Supports standard and Drop D tuning, playability filtering, and both interactive and batch CLI modes.</p>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li><strong>Fretboard modeling:</strong> Represents a configurable guitar neck as a 2D grid with note/pitch lookups, supporting any tuning and fret count.</li>
+        <li><strong>Voicing generation:</strong> Computes playable fingerings for any chord symbol, filtering by fret span, minimum strings sounded, and bass-note requirements.</li>
+        <li><strong>Custom hash table:</strong> Caches generated voicings in a purpose-built hash table for O(1) repeated lookups with collision handling and automatic resizing.</li>
+        <li><strong>Interactive and batch modes:</strong> Query chords one at a time in a REPL or pass multiple chord names as arguments for quick batch output.</li>
+      </ul>
+
+      <div class="chord-screenshots">
+        <div class="screenshot">
+          <img src="assets/chordarchitect/chord_repl.png" alt="Interactive REPL session">
+          <p>Interactive Mode</p>
+        </div>
+        <div class="screenshot">
+          <img src="assets/chordarchitect/chord_batch.png" alt="Batch mode with multiple chords">
+          <p>Batch Mode</p>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="https://github.com/luiscortesjimenez/guitar_chord_generator" class="btn">View Code on GitHub</a>
+        <a href="https://github.com/luiscortesjimenez/guitar_chord_generator#readme" class="btn">Read Documentation</a>
+      </div>
+    </main>
+  </body>
+</html>

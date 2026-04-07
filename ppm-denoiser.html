@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPM Image Denoiser — Luis Cortes Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">Luis Cortes Jimenez</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="auction-website.html">Auction Website</a>
+        <a href="chordarchitect.html">Chord Architect</a>
+        <a href="ppm-denoiser.html" class="active">PPM Denoiser</a>
+        <a href="cacti.html">Cacti / Succulents</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>PPM Image Denoiser</h1>
+      <p><strong>C++, CMake</strong></p>
+      <p>A C++ tool that denoises Portable Pixmap (PPM) images by averaging multiple noisy samples to produce a single clean image.</p>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li><strong>Pixel-level averaging:</strong> Reads an arbitrary number of noisy PPM files and averages their RGB values per pixel to reconstruct a clean output image.</li>
+        <li><strong>PPM parsing:</strong> Parses the P3 (ASCII) and P6 (binary) PPM formats from scratch with no external image libraries.</li>
+        <li><strong>CMake build system:</strong> Configured with CMake for cross-platform compilation and easy integration into larger projects.</li>
+        <li><strong>Command-line interface:</strong> Accepts input files and output path as arguments for quick batch processing.</li>
+      </ul>
+
+      <div class="project-demo">
+        <div class="noisy-grid">
+          <img src="assets/ppm/noisy1.png" alt="Noisy 1">
+          <img src="assets/ppm/noisy2.png" alt="Noisy 2">
+          <img src="assets/ppm/noisy3.png" alt="Noisy 3">
+          <img src="assets/ppm/noisy4.png" alt="Noisy 4">
+          <img src="assets/ppm/noisy5.png" alt="Noisy 5">
+          <img src="assets/ppm/noisy6.png" alt="Noisy 6">
+          <img src="assets/ppm/noisy7.png" alt="Noisy 7">
+          <img src="assets/ppm/noisy8.png" alt="Noisy 8">
+          <img src="assets/ppm/noisy9.png" alt="Noisy 9">
+        </div>
+
+        <div class="demo-arrow">&#8594;</div>
+
+        <div class="clean-image">
+          <img src="assets/ppm/clean.png" alt="Final Clean Image">
+          <p>Final Averaged Image</p>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="https://github.com/luiscortesjimenez/PPM_Denoiser" class="btn">View Code on GitHub</a>
+        <a href="https://github.com/luiscortesjimenez/PPM_Denoiser#readme" class="btn">Read Documentation</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,78 +1,36 @@
-<!-- Basic HTML Structure -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Cortes Portfolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Luis Cortes Jimenez Portfolio</h1>
-    <h2>About Me</h2>
-    <p>Welcome! I am a CS student at Sonoma State University.</p>
-    <!-- Projects -->
-    <h2>Projects:</h2>
+    <aside class="sidebar">
+      <div class="sidebar-header">Luis Cortes Jimenez</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="auction-website.html">Auction Website</a>
+        <a href="chordarchitect.html">Chord Architect</a>
+        <a href="ppm-denoiser.html">PPM Denoiser</a>
+        <a href="cacti.html">Cacti / Succulents</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </aside>
 
-    <h3>PPM Image Denoiser (C++, CMake):</h3>
-    <p>A C++ tool that denoises Portable Pixmap (PPM) images by averaging multiple noisy samples to produce a single clean image.</p>
-    <!-- CSS Grid for 9 Noisy Images & 1 Clean Image -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 20px;">
-      <!-- 3x3 Grid of Noisy Images -->
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; max-width: 300px;">
-        <img src="assets/noisy1.png" alt="Noisy 1" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy2.png" alt="Noisy 2" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy3.png" alt="Noisy 3" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy4.png" alt="Noisy 4" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy5.png" alt="Noisy 5" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy6.png" alt="Noisy 6" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy7.png" alt="Noisy 7" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy8.png" alt="Noisy 8" style="width: 100%; border: 1px solid #ccc;">
-        <img src="assets/noisy9.png" alt="Noisy 9" style="width: 100%; border: 1px solid #ccc;">
-      </div>
-      
-      <!-- Arrow indicating process -->
-      <div style="font-size: 24px; font-weight: bold;">&#8594;</div>
+    <main class="main-content">
+      <h1>Luis Cortes Jimenez Portfolio</h1>
 
-      <!-- Final Clean Image -->
-      <div style="max-width: 400px; text-align: center;">
-        <img src="assets/clean.png" alt="Final Clean Image" style="width: 100%; border: 1px solid #ccc;">
-        <p style="margin-top: 5px; font-weight: bold;">Final Averaged Image</p>
-      </div>
-    </div>
-    <br><br>
-    <a href="https://github.com/luiscortesjimenez/PPM_Denoiser" style="padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">View Code on GitHub</a>
-    <a href="https://github.com/luiscortesjimenez/PPM_Denoiser#readme" style="padding: 8px 12px; background-color: #24292e; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; margin-left: 10px;">Read Documentation</a>
-    <br><br>
+      <h2>About Me</h2>
+      <p>Welcome! I am a junior year Computer Science student at Sonoma State University. My goal is to complete my undergraduate degree and then pursue graduate studies where I can apply my interest in computers to my love for nature. Eventually, I hope to help develop and improve Computer Vision models for the identification and protection of endangered plant species using high resolution satellite imagery. </p>
 
-    <h3>ChordArchitect (C++, CMake):</h3>
-    <p>A C++ guitar chord generator that models a fretboard, computes voicings for any chord symbol (e.g. Am, G7, Cmaj7) and stores them in a custom hash table for fast lookup. Supports standard and Drop D tuning, playability filtering, and both interactive and batch CLI modes.</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-bottom: 20px;">
-      <div style="text-align: center;">
-        <img src="assets/chord_repl.png" alt="Interactive REPL session" style="max-width: 480px; width: 100%; border: 1px solid #ccc;">
-        <p style="margin-top: 5px; font-weight: bold;">Interactive Mode</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="assets/chord_batch.png" alt="Batch mode with multiple chords" style="max-width: 480px; width: 100%; border: 1px solid #ccc;">
-        <p style="margin-top: 5px; font-weight: bold;">Batch Mode</p>
-      </div>
-    </div>
-    <br><br>
-    <a href="https://github.com/luiscortesjimenez/guitar_chord_generator" style="padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">View Code on GitHub</a>
-    <a href="https://github.com/luiscortesjimenez/guitar_chord_generator#readme" style="padding: 8px 12px; background-color: #24292e; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; margin-left: 10px;">Read Documentation</a>
-    <br><br>
-
-    <!-- Hobbies & Interests -->
-    <h2>Hobbies & Interests</h2>
-    <ul>
-      <li><strong>Playing Guitar:</strong> I love playing the guitar. I built <a href="https://github.com/luiscortesjimenez/guitar_chord_generator">ChordArchitect</a>, a C++ tool that generates and visualizes guitar chord voicings across the fretboard.</li>
-      <li><strong>Hiking:</strong> I enjoy hiking and exploring the outdoors. My favorite local hike is the Mt Tamalpais in Marin.</li>
-      <li><strong>Gardening:</strong> I have a small green house in my backyard where I grow and preserve rare and endagered cacti and succulents. I am planning on uploading a couple of photos of my plants soon.</li>
-    </ul>
-
-    <!-- Contact Information -->
-    <h2>Contact Me</h2>
-    <p>Email: luisgcortesjimenez@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/luiscortesjimenez">LinkedIn Profile</a></p>
-    <p>GitHub: <a href="https://github.com/luiscortesjimenez">GitHub Profile</a></p>
+      <h2>Hobbies &amp; Interests</h2>
+      <ul>
+        <li><strong>Playing Guitar:</strong> I love playing the guitar. I built <a href="https://github.com/luiscortesjimenez/guitar_chord_generator">Chord Architect</a>, a C++ tool that generates and visualizes guitar chord voicings across the fretboard.</li>
+        <li><strong>Hiking:</strong> I enjoy hiking and exploring the outdoors. My favorite local hike is the Mt Tamalpais in Marin. I also love the hike to Alamere Falls!</li>
+        <li><strong>Plant Conservation:</strong> I have a small green house in my backyard where I grow and preserve rare and endangered cacti and succulents. Check out my <a href="cacti.html">Cacti / Succulents</a> page for photos.</li>
+      </ul>
+    </main>
   </body>
 </html>
