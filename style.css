@@ -64,6 +64,16 @@ body {
   color: #fff;
 }
 
+.nav-label {
+  display: block;
+  padding: 16px 14px 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8e8e93;
+}
+
 /* ── Main content ── */
 
 .main-content {
@@ -328,6 +338,10 @@ body {
     padding: 8px 14px;
     font-size: 0.9rem;
     margin-bottom: 4px;
+  }
+
+  .nav-label {
+    padding: 8px 10px 2px;
   }
 
   .main-content {
